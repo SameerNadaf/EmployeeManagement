@@ -14,7 +14,7 @@ public class App
     public static void main( String[] args )
     {
     	try {
-       	 Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
+       	 	Configuration con = new Configuration().configure().addAnnotatedClass(Employee.class);
             ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
             factory = con.buildSessionFactory(reg); 
             
@@ -22,7 +22,7 @@ public class App
             ManageEmployee ME = new ManageEmployee();
             
             while (true) {
-           	 System.out.println();
+           	 	System.out.println();
                 System.out.println("Employee Management");
                 System.out.println();
                 System.out.println("1. Add Employee");
